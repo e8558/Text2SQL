@@ -1,0 +1,52 @@
+{
+  "ko": {
+    "pretrained_model": "monologg/koelectra-base-v3-discriminator",
+    "pkl_path": "pkl/koelectra-base-v3-discriminator",
+    "pkl_name": "data.pkl",
+    "table_path": "data/nia/tables.json",
+    "train_path": "data/nia/train.json",
+    "valid_path": "data/nia/valid.json",
+    "dev_path": "data/nia/dev.json",
+    "patience": 5,
+    "learning_rate": 1e-6,
+    "table_concat": false,
+    "use_fixed_max_num": false,
+    "max_num": {
+        "table_id" : 2,
+        "table_num" : 2,
+        "column_num" : 48,
+        "select" : 6,
+        "groupby" : 2,
+        "orderby" : 2,
+        "where" : 4,
+        "having" : 1,
+        "spc_id" : 2
+    }
+  },
+  "en": {
+    "pretrained_model": "bert-large-uncased-whole-word-masking",
+    "pkl_path": "pkl/bert-large-uncased-whole-word-masking",
+    "pkl_name": "data.pkl",
+    "table_path": "data/spider/tables.json",
+    "train_path": ["data/spider/train_spider.json", "data/spider/train_others.json"],
+    "valid_path": "",
+    "dev_path": "data/spider/dev.json",
+    "exceed_path": "data/spider/exceed_list.json",
+    "exceed_overlap": true,
+    "patience": 20,
+    "learning_rate": 1e-5,
+    "table_concat": false,
+    "use_fixed_max_num": false,
+    "max_num": {
+        "table_id" : 26,
+        "table_num" : 5,
+        "column_num" : 26,
+        "select" : 6,
+        "groupby" : 4,
+        "orderby" : 3,
+        "where" : 4,
+        "having" : 2,
+        "spc_id" : 4
+    }
+  }
+}

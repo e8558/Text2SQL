@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    container_name: nl2sql-ryansql
+    image: ryansql_model:1.2
+    environment:
+      - "LANG=C.UTF-8"
+      - "LANGUAGE=C.UTF-8"
+      - "TZ=Asia/Seoul"
+    volumes:
+      - /home/peter/workspace/NL2SQL/NIA27/model_spider/data/download:/model_spider/data/download
+    runtime: nvidia
+    tty: true
+    stdin_open: true
